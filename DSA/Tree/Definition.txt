@@ -1,1 +1,12 @@
-I started learning tree data structure
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+
+    <img src="./assets/Screenshot 2025-07-17 170351.png" alt="">
+    
+</body>
+</html>
