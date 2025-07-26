@@ -26,4 +26,3 @@ A tree has the following characteristics:
 15. **Perfect Binary Tree**: A binary tree in which all internal nodes have two children and all leaves are at the same level.  
 16. **AVL Tree**: A self-balancing binary search tree where the difference in heights between the left and right subtrees is at most one for all nodes.
 17. **Red-Black Tree**: A balanced binary search tree where each node has an additional color attribute (red or black) to ensure balance during insertions and deletions.
-18. **Trie**: A tree-like data structure used to store a dynamic set of strings, where each node represents a character of a string. It is commonly used for autocomplete and spell-checking applications.  

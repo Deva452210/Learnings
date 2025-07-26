@@ -1,0 +1,26 @@
+Graph in DSA (Data Structures and Algorithms) is a non-linear data structure consisting of nodes (vertices) and edges connecting them. Graphs are divided into two main types:
+ 1. Directed Graph (edges have direction)
+ 2. Undirected Graph (edges have no direction)
+
+A graph is a data structure made up of nodes (vertices) and connections between them (edges).
+
+Directed Graph (Digraph)
+Edges have a direction: Each edge goes from one node to another specific node.
+Analogy: Like a one-way street.
+Example: If there’s an edge from A to B, you can go from A to B, but not necessarily from B to A.
+--------------------------------------------------------------------------------------------------------------------------
+Undirected Graph
+Edges have no direction: Each edge simply connects two nodes, and you can travel both ways.
+Analogy: Like a two-way street.
+Example: If there’s an edge between A and B, you can go from A to B and from B to A.
+---------------------------------------------------------------------------------------------------------------------------
+Visual Example
+Directed:
+A → B
+
+Undirected:
+A — B
+---------------------------------------------------------------------------------------------------------------------------
+Use Cases
+Directed: Web links, Twitter followers, task dependencies.
+Undirected: Facebook friends, road maps (if roads are two-way).
