@@ -1,0 +1,7 @@
+Jenkins is an open-source automation server used to automate the building, testing, and deployment of software. 
+It supports continuous integration (CI) and continuous delivery (CD) by enabling developers to automatically build and test code changes, 
+making it easier to integrate changes into a project and deliver software more rapidly and reliably.
+
+In Jenkins, the master and slave (now commonly referred to as controller and agent) architecture allows for distributed builds. 
+The master (controller) manages tasks such as scheduling jobs, monitoring agents, and reporting results. 
+Slaves (agents) are machines configured to execute build jobs dispatched by the master, enabling parallel and platform-specific builds across multiple environments.
