@@ -50,5 +50,10 @@ Spring vs Springboot:
         String createUser(@RequestBody String body){ - Use RequestBody annotation
             return body;
     }
-    4. By this you can send data safely
+    4. By this you can send data safely.
+
+----------------------------------------------------------------------------------------------------
+
+> Dependancy Injection
+    1. 
 
