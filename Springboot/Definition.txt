@@ -1,0 +1,54 @@
+Springboot is a Java-based framework used to create stand-alone, production-grade Spring applications with minimal configuration. It simplifies the setup and development of new Spring projects by providing defaults and auto-configuration, embedded servers, and production-ready features.
+
+Spring vs Springboot:
+    * Spring is a framework which is written top of JAVA.
+    * Springboot is created using spring
+
+> Inpts to API:
+    1. Create a new controller file
+    2. Create a Getmapping endpoint with a return function
+ 
+ > Request mapping:
+    1. localhost:8080/todo/get, localhost:8080/todo/put
+    2. Here we repeated the /todo, it would be easy if we group the params
+    3. We have to add @Requestmaping("/todo") below @Restcontroller
+    4. Add ("/get") and ("/put") in getmapping with a return function.
+    5. Now you can run the code. ("http://localhost:8080/todo/get)
+
+> Path variable
+    1. http://localhost:8080/todo/3
+    2. Here we have path and we replace the "id" with a variable.
+    3. Change the getmapping as @GetMapping("/{id}")
+    4. To add the variable or value to the uncion as an argument. We need an annotation.
+    5. @Pathvariable - add with data type
+    6.  @GetMapping("/{id}")
+        String getTodoId(@PathVariable int id){ - here add the annotation, datatype and variable name
+            return "Todo by ID " + id; - here call the variable
+    }
+
+> RequestParam:
+    1. /api/v1/todo?id=3
+    2. Here we have "?" followed by key and value
+    3.  @GetMapping("") - give the endpoint
+        String getTodoIdParam(@RequestParam int id){ - here add annotation
+            return "Todo by ID with param " + id;
+    }
+    4. Now we can access data from params
+    5.  @GetMapping("")
+        String getTodoIdParam(@RequestParam("todo") int id){ - add name for the params
+            return "Todo by ID with param " + id;
+    }
+    6. Now we can access data using name : "todo"
+
+> Request body:
+    1.   @GetMapping("/create")
+        String createUser(@RequestParam String userId, @RequestParam String password){
+            return "UserId " + userId + " Password: " + password;
+    }
+    2. We send userId and password in params but it is not safe way to do it
+    3. @PostMapping("/create")
+        String createUser(@RequestBody String body){ - Use RequestBody annotation
+            return body;
+    }
+    4. By this you can send data safely
+
