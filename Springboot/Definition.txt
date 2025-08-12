@@ -54,6 +54,11 @@ Spring vs Springboot:
 
 ----------------------------------------------------------------------------------------------------
 
-> Dependancy Injection
-    1. 
+> Connecting with h2 database
+    1. First copy paste the dependency code from maven repository website in porm.xml file
+    2. To connect create connection link, driver, username, password and console in "application.proenties" file in "resouces"
+    3. Run localhost:8080/h2-console
+    4. Create an entity class - Create a model package - create a java class (todo) inside that - Create model (int id; string name)
+    5. Go to maven repository and search "Spring JPA" - copy paste the dependency code.
+    6. Use @Entity, @Id, @GeneratedValue annotation
 
